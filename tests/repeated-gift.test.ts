@@ -6,4 +6,10 @@ describe("First repeated gift finder", () => {
 
         expect(result).toBe(-1);
     });
+
+    it("should return the repeated number", () => {
+        const result = findFirstRepeatedGift([1, 2, 3, 2]);
+
+        expect(result).toBe(2);
+    });
 });

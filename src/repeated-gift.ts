@@ -1,11 +1,8 @@
 export default function findFirstRepeatedGift(gifts: number[]) {
-    const pastNumbers: number[] = [];
+    const pastGifts: number[] = [];
     for (const gift of gifts) {
-        if (pastNumbers.includes(gift)) {
-            return gift;
-        } else {
-            pastNumbers.push(gift);
-        }
+        if (pastGifts.includes(gift)) return gift;
+        pastGifts.push(gift);
     }
     return -1;
 }
